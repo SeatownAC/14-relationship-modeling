@@ -1,6 +1,6 @@
 ## Mongo/Express 2 Resource API
 
-https://travis-ci.com/SeatownAC/14-relationship-modeling.svg?branch=master
+##![Travis] (https://travis-ci.com/SeatownAC/14-relationship-modeling.svg?branch=master)
 
 ## Heroku https://lab-14-relationship-model.herokuapp.com/
 
