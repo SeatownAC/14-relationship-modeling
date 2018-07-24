@@ -3,14 +3,11 @@
 import express from 'express';
 const router = express.Router();
 
-// Dynamic Models
-// This will use a model matching /:model/ in all routes that have a model parameter
+
 import modelFinder from '../middleware/models.js';
 router.param('model', modelFinder);
 
-// Each of our REST endpoints simply calls the model's appropriate CRUD Method (only give the students GET and POST for now)
-// In all cases, we just catch(next), which feeds any errors we get into the next() as a param
-// This fires off the error middleware automatically.  Otherwise, we send out a formatted JSON Response
+
 
 router.get('/api/v1/:model', (req,res,next) => {
   req.model.find({})
